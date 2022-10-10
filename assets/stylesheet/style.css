@@ -1,0 +1,334 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	/* outline: 2px solid limegreen; */
+}
+
+/* .right{
+  background: blue;
+} */
+
+.w-100{
+  width: 100%;
+}
+
+header .hero .left img{
+width: 100%;
+height: 100vh;
+}
+
+
+.hero .right{
+  margin: 0 3rem;
+}
+
+.section .right .container{
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.section .right .container .columns{
+  align-items: flex-end;
+}
+
+
+
+.row-1 .line{
+  height: 0.1rem;
+  width: 400px;
+  background:black;
+  margin-right:3rem;
+}
+
+nav .navbar a {
+  margin-right:4.6rem;
+  padding:2rem 0;
+  font-size:1.5rem;
+  text-decoration: none;
+}
+
+.heading h1 hr{
+
+height: 10px;
+width: 35px;
+background: black;
+border:none;
+}
+
+.socials{
+  flex-direction: column;
+  gap:3rem;
+}
+
+.container .text{
+  align-items: flex-end;
+  
+}
+
+
+.container .text{
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+button{
+  background:rgb(108, 109, 108);
+  color:white;
+  padding:1.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  font-size: 1rem;
+}
+
+/* heading section*/
+
+.heading h1{
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+.heading .white{
+color:white;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+margin-bottom: -3rem;
+}
+
+.heading .black{
+  margin-left: 9rem;
+}
+
+
+
+/* dance section */
+
+.dance-section p{
+  font-size: 1.76rem;
+}
+
+
+.arrow{
+  margin-top:20%;
+  margin-left: 5%;
+  
+}
+
+/* timeline section */
+
+.timeline-items{
+	max-width:300px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color:gray;
+	left: calc(10% - 1px);
+}
+.timeline-item{
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+
+.timeline-item{
+    padding-left: calc(10% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color:black;
+	position: absolute;
+	left: calc(10% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-content{
+	font-size: 1.5rem;
+	color:gray;
+	/* margin:6px 0 15px; */
+}
+
+
+/* responsive */
+/* @media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+} */
+
+
+ @media(max-width:870px){
+
+
+	.hero{
+		display: flex;
+		flex-direction: column;
+	}
+	.left img{
+		height:100vh;
+		width: 100vw;
+	}
+
+.section{
+	width: 100vw;
+}
+
+.heading h1{
+  font-size: 6rem;
+  font-weight: bold;
+}
+button{
+  background:rgb(108, 109, 108);
+  color:white;
+  padding:1.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  width: 250px;
+  font-size: 1rem;
+}
+
+.hero .right {
+	margin: 0;
+}
+} 
+
+
+
+
+@media(max-width:650px){
+.left{
+	width: 100%;
+}
+.left img{
+	display: none;
+}
+.right{
+	width: 100%;
+}
+
+	.hero .right{
+		margin: 0 ;
+	}
+	.row-1 .line{
+		display: none;
+	}
+
+	 nav .navbar{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		background-image: url(../images/hero.jpg);
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	} 
+
+	nav .navbar a {
+		/* padding:1.3rem ;
+		font-size:1.2rem;
+		text-decoration: none;
+		margin-right: 0rem;
+		font-weight: bold;
+		color:blue; */
+		display: none;
+	}
+
+
+
+	.section{
+		width: 100%;
+		flex-direction: column;
+		gap: 3rem;
+		justify-content: center;
+		margin: 0 4%;
+	}
+
+
+	.heading h1{
+		font-size: 4rem;
+		font-weight: bold;
+		margin-top:1rem;
+	}
+
+
+	.heading .black{
+		margin-left: 8rem;
+	}
+
+	button{
+
+		font-size: 1.5rem;
+	}
+
+	section .right {
+		justify-content: center;
+	}
+
+
+
+	/* .section .right{
+		justify-content: center;
+	} */
+
+	.row-2 .container{
+		display: flex;
+		justify-content: center;
+		flex-direction: column-reverse;
+		/* text-align: center; */
+		width: 100%;
+	}
+
+	.dance-section{
+		text-align: center;
+		margin: 2rem 0;
+	}
+	.dance-section p{
+		text-align: center;
+		font-size:1rem;
+	}
+	.dance-section .dance{
+		width:85%;
+		margin: 0;
+	}
+
+	.timeline-items {
+    max-width: 300px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+	.arrow{
+		display: flex;
+		justify-content: center;
+	}
+
+
+}
